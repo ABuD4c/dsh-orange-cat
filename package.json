@@ -1,0 +1,52 @@
+{
+  "name": "dsh-orange-cat",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 橘猫桌宠：多图换肤、动作配置、随 Agent 状态动态反馈。",
+  "author": "catpluign",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src/",
+    "lib/client.js",
+    "runtime/",
+    "assets/",
+    "cordis.patch.yml",
+    "requirements.txt",
+    "preview.cmd",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.19"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "3.18.4"
+  },
+  "bundleDependencies": [
+    "@deepseek-ai/schemastery"
+  ],
+  "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings-plugins"
+      ],
+      "platform": "web"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "desktop-pet",
+    "orange-cat",
+    "agent-companion"
+  ],
+  "license": "MIT"
+}
