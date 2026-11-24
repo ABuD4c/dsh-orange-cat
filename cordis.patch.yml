@@ -1,0 +1,13 @@
+- insert:
+    - id: dsh-orange-cat
+      name: dsh-orange-cat
+      config:
+        enabled: true
+        scale: 1
+        bubbleEnabled: true
+        activityLevel: normal
+        reducedMotion: false
+        wanderEnabled: true
+        clickEnabled: true
+        includeSubagents: false
+        skinId: orange-cat
